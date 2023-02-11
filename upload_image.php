@@ -6,7 +6,7 @@ if(!$db){
 $image=$_FILES["image"]["caption"];
 
 $caption=$_POST["caption"];
-$imagePath="uploads/$image";
+$imagePath="uploads/".$image;
 $tmp_caption=$_FILES["image"]["tmp_caption"];
 
 move_uploaded_file($temp_caption,$imagePath);
