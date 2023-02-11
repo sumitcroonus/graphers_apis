@@ -7,7 +7,7 @@ $image=$_FILES["image"]["caption"];
 
 $caption=$_POST["caption"];
 $imagePath="uploads/".$image;
-$tmp_caption=$_FILES["image"]["tmp_caption"];
+$temp_caption=$_FILES["image"]["temp_caption"];
 
 move_uploaded_file($temp_caption,$imagePath);
 

@@ -62,5 +62,5 @@ $res = mysqli_query($db, $getotp);
 $row = mysqli_fetch_assoc($res);
 
 echo json_encode($row['otp']);
-// $db->close();
+
 ?>
